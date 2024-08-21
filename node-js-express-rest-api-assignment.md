@@ -239,22 +239,24 @@ Nota bene: this assignment was created using https://github.com/AlreadyBored/nod
 
 3. Use TypeScript and Express.JS or Nest.JS framework for API
 
-4. All services should be covered by unit tests with at least couple of cases when applicable (use Jest as a testing framework)
+4. (*) Code should be styled using eslint/prettier or alternative.
 
-5. An `application/json` format should be used for request and response body.
+5. All services should be covered by unit tests with at least couple of cases when applicable (use Jest as a testing framework)
 
-6. (*) Any request to routes other than `/user/register` must contain `userId` in headers. They should be logged in `AccessLog` table depending on action and entity type
+6. An `application/json` format should be used for request and response body.
 
-7. If a user is marked as inactive - any artist that refers to this user must be marked as hidden as well
+7. (*) Any request to routes other than `/user/register` must contain `userId` in headers. They should be logged in `AccessLog` table depending on action and entity type
 
-8. In list routes, inactive/hidden entities should be excluded from response
+8. If a user is marked as inactive - any artist that refers to this user must be marked as hidden as well
 
-9. When you remove `Artist`, `Album` or `Track`, it's `id` should be deleted from favorites (if was there) and references to it in other entities should become `null`. For example: `Artist` is deleted => this `artistId` in corresponding `Albums`'s and `Track`'s become `null` + this artist's `id` is deleted from favorites, same logic for `Album` and `Track`.
+9. In list routes, inactive/hidden entities should be excluded from response
 
-10. Non-existing entity can't be added to `Favorite`.
+10. When you remove `Artist`, `Album` or `Track`, it's `id` should be deleted from favorites (if was there) and references to it in other entities should become `null`. For example: `Artist` is deleted => this `artistId` in corresponding `Albums`'s and `Track`'s become `null` + this artist's `id` is deleted from favorites, same logic for `Album` and `Track`.
 
-11. To run the service `npm start` command should be used.
+11. Non-existing entity can't be added to `Favorite`.
 
-12. Service should listen on PORT `4000` by default, PORT value is stored in `.env` file.
+12. To run the service `npm start` command should be used.
 
-12. Incoming requests should be validated.
+13. Service should listen on PORT `4000` by default, PORT value is stored in `.env` file.
+
+14. Incoming requests should be validated.

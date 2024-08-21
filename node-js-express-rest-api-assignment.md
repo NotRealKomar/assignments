@@ -237,7 +237,7 @@ Nota bene: this assignment was created using https://github.com/AlreadyBored/nod
 
 2. Use an SQL database of your choice to store data (preferrably MySQL or PostgreSQL). Add a setup guide to the README.md file. All DB parameters must be stored in `.env` file
 
-3. Use Express.JS or Nest.JS framework for API
+3. Use TypeScript and Express.JS or Nest.JS framework for API
 
 4. All services should be covered by unit tests with at least couple of cases when applicable (use Jest as a testing framework)
 
